@@ -1,0 +1,10 @@
+<div class="card text-center shadow">
+  <img [src]="product.image" class="card-img-top img-fluid" alt="{{ product.name }}">
+  <div class="card-body">
+    <h5 class="card-title">{{ product.name }}</h5>
+    <p class="card-text">{{ product.description }}</p>
+    <p><strong>Precio:</strong> {{ product.price }} €</p>
+    <p><strong>Categoría:</strong> {{ product.category }}</p>
+    <a [routerLink]="['/producto', product._id]" class="btn btn-primary mt-2">Ver Detalle</a>
+  </div>
+</div>
